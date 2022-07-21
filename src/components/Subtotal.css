@@ -1,0 +1,62 @@
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  padding: 12px 0;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 7px;
+  min-height: 100px;
+}
+.subtotal p {
+  margin: 5px;
+}
+.subtotal__gift {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.subtotal__gift > input {
+  margin-right: 5px;
+}
+
+.subtotal__button {
+  background: linear-gradient(#ffdf8b, #f0c14b);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  filter: drop-shadow(2px 3px 3px grey);
+}
+.subtotal__button:hover {
+  background: linear-gradient(#ffd975, #e6b028);
+}
+
+.subtotal__shop {
+  margin-top: 30px;
+  padding: 3px;
+  background: linear-gradient(#f8efef, #c4c4c4);
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 15px;
+  filter: drop-shadow(2px 3px 3px grey);
+}
+.subtotal__shop:hover {
+  background: linear-gradient(#f0efef, #bab9b9);
+}
+
+.subtotal__shop a {
+  text-decoration: none;
+  color: black;
+  padding: 4px;
+}
+
+@media (max-width: 800px) {
+  .subtotal {
+    border-radius: 20px;
+  }
+}

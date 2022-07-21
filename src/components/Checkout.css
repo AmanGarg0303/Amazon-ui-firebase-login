@@ -1,0 +1,46 @@
+.checkout {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  padding: 5px;
+  min-height: 82vh;
+}
+.checkout__ad {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+.checkout__left {
+  max-width: 1000px;
+  width: 100%;
+}
+.checkout__right {
+  max-width: max-content;
+  text-align: center;
+}
+
+.checkout__userName {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout__right {
+    margin: auto;
+    width: fit-content;
+  }
+}
+
+.rsis-container > div:nth-child(2) {
+  /*this class is in DOM for checkout ads slider*/
+  background-size: contain !important;
+}
